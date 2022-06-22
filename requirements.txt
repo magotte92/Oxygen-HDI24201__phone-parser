@@ -4,7 +4,7 @@ chardet==3.0.4
 html5lib==1.0.1
 idna==2.8
 lxml==4.4.2
-numpy==1.18.1
+numpy==1.22.0
 pandas==0.25.3
 pyodbc==4.0.28
 python-dateutil==2.8.1
