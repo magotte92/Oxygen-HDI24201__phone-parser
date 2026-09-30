@@ -10,7 +10,7 @@ from connections import connectRouter
 def _router_parser(file=None):
     page = connectRouter()
     soup = BeautifulSoup(page, 'html.parser')
-    last_call = soup.findAll('table', {'class', 'main_table'})[1].text
+    last_call = soup.find_all('table', {'class', 'main_table'})[1].text
     new_log = datetime.datetime.now().strftime('%d-%m-%y %H_%M_%S') + '.csv'
 
     with open(f'cache/{new_log}', 'w+') as f:
